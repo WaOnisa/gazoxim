@@ -1,0 +1,47 @@
+.tgwidget{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 125px;
+    height: 125px;
+    z-index: 99;
+    div{
+        bottom: -50%;
+    }
+    .icon{
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .textblock{
+        z-index: 1;
+        bottom: -50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        
+    }
+    .back{
+        z-index: -2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .text {
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform:rotate(0deg);
+        }
+        100% {
+            transform:rotate(360deg);
+        }
+}
+}
