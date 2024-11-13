@@ -15,6 +15,31 @@
   font-family: "OnestRegular";
   src: url(./fonts/Onest/Onest-Regular.ttf);
 }
+@font-face {
+  font-family: "OnestMedium";
+  src: url(./fonts/Onest/Onest-Medium.ttf);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, .p, .a, .span, h1, h2, h3, h4, h5, h6, p, a, span {
+  margin: 0;
+}
+
+.centred-trend, .centred-company, .centred-command, .centred-project, .centred-know-more, .centred-partners, .centred-contacts {
+  padding: 75px 0;
+}
+
+.button-main {
+  background-color: #3B79FF;
+  padding: 15.5px 34px;
+  font-family: "Onest";
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 127.5%;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px #3B79FF solid;
+}
+
 header {
   padding-top: 18px;
   padding-bottom: 20px;
@@ -257,7 +282,6 @@ header .offcanvas.offcanvas-end .offcanvas-body nav .off-contacts div p {
   font-weight: 700;
   color: #3B79FF;
   line-height: 130%;
-  margin: 0;
 }
 .main-banner .title-banner div {
   display: flex;
@@ -270,7 +294,6 @@ header .offcanvas.offcanvas-end .offcanvas-body nav .off-contacts div p {
   font-weight: 400;
   color: #424242;
   line-height: 134%;
-  margin: 0;
 }
 
 .tgwidget {
@@ -304,7 +327,7 @@ header .offcanvas.offcanvas-end .offcanvas-body nav .off-contacts div p {
 }
 .tgwidget .text {
   animation-name: rotation;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -317,22 +340,252 @@ header .offcanvas.offcanvas-end .offcanvas-body nav .off-contacts div p {
   }
 }
 
-.trend .trend-block {
+.trend-block h2 {
+  font-family: "OnestBold";
+  font-size: 46px;
+  font-weight: 700;
+  color: #171717;
+  line-height: 130%;
+  align-self: center;
+}
+.trend-block h2 span {
+  color: #3B79FF;
+}
+.trend-block-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 464px;
+  gap: 20px;
+  padding-top: 50px;
 }
-.trend .trend-block picture {
-  position: relative;
+.trend-block-cards .trend-block-card {
+  gap: 20px;
+}
+.trend-block-cards .trend-block-card picture {
+  height: 366px;
   width: 100%;
-  height: 100%;
 }
-.trend .trend-block picture img {
-  position: absolute;
+.trend-block-cards .trend-block-card picture img {
   -o-object-fit: cover;
      object-fit: cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+}
+.trend-block-cards .trend-block-card .trend-block-text {
+  gap: 10px;
+}
+.trend-block-cards .trend-block-card .trend-block-text h3 {
+  font-family: "Onest";
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 100%;
+}
+.trend-block-cards .trend-block-card .trend-block-text p {
+  font-family: "OnestRegular";
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.7411764706);
+  line-height: 134%;
+}
+.trend-block-cards .trend-block-card:hover .trend-block-text h3 {
+  color: #3B79FF;
+}
+.trend-block-cards .trend-block-card:hover .trend-block-text p {
+  color: rgba(17, 17, 17, 0.7411764706);
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .trend h2 {
+    font-family: "OnestBold";
+    font-size: 36px;
+    font-weight: 700;
+    color: #171717;
+    line-height: 130%;
+  }
+  .trend h2 span {
+    color: #3B79FF;
+  }
+  .trend .trend-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 375px;
+    gap: 20px;
+    padding-top: 50px;
+  }
+  .trend .trend-block .trend-block-card {
+    gap: 20px;
+  }
+  .trend .trend-block .trend-block-card picture {
+    height: 286px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text {
+    gap: 10px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text h3 {
+    font-family: "OnestMedium";
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 120%;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text p {
+    font-family: "OnestRegular";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7411764706);
+    line-height: 134%;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .trend h2 {
+    font-family: "OnestBold";
+    font-size: 36px;
+    font-weight: 700;
+    color: #171717;
+    line-height: 130%;
+  }
+  .trend h2 span {
+    color: #3B79FF;
+  }
+  .trend .trend-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 337px);
+    gap: 30px;
+    padding-top: 40px;
+  }
+  .trend .trend-block .trend-block-card {
+    gap: 20px;
+  }
+  .trend .trend-block .trend-block-card picture {
+    height: 248px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text {
+    gap: 10px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text h3 {
+    font-family: "OnestMedium";
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 120%;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text p {
+    font-family: "OnestRegular";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7411764706);
+    line-height: 134%;
+  }
+}
+@media (max-width: 576px) {
+  .trend h2 {
+    font-family: "OnestBold";
+    font-size: 24px;
+    font-weight: 700;
+    color: #171717;
+    line-height: 130%;
+  }
+  .trend h2 span {
+    color: #3B79FF;
+  }
+  .trend .trend-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 256px);
+    gap: 30px;
+    padding-top: 25px;
+  }
+  .trend .trend-block .trend-block-card {
+    gap: 20px;
+  }
+  .trend .trend-block .trend-block-card picture {
+    height: 184px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text {
+    gap: 10px;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text h3 {
+    font-family: "OnestBold";
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 130%;
+  }
+  .trend .trend-block .trend-block-card .trend-block-text p {
+    font-family: "OnestRegular";
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7411764706);
+    line-height: 130%;
+  }
+}
+.company-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.company-block-text {
+  gap: 30px;
+}
+.company-block-text h2 {
+  font-family: "OnestBold";
+  font-size: 46px;
+  font-weight: 700;
+  color: #424242;
+  line-height: 130%;
+}
+.company-block-text h2 span {
+  color: #3B79FF;
+}
+.company-block-text p {
+  font-family: "OnestRegular";
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.7411764706);
+  line-height: 130%;
+}
+
+.command-block {
+  gap: 55px;
+}
+.command-block h2 {
+  max-width: 1159px;
+  font-family: "OnestBold";
+  font-size: 50px;
+  font-weight: 700;
+  color: #171717;
+  line-height: 130%;
+  text-align: right;
+}
+.command-block h2 span {
+  color: #3B79FF;
+}
+.command-block h2 p {
+  color: #424242;
+}
+.command-block-cards {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  row-gap: 40px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.command-block-card {
+  gap: 5px;
+}
+.command-block-card p {
+  font-family: "OnestRegular";
+  font-size: 20px;
+  font-weight: 400;
+  color: #817E7E;
+  line-height: 134%;
+}
+.command-block-card span {
+  font-family: "Onest";
+  font-size: 64px;
+  font-weight: 500;
+  color: #3B79FF;
+  line-height: 130%;
 }/*# sourceMappingURL=style.css.map */

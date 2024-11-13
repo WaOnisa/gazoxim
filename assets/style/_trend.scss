@@ -1,19 +1,193 @@
 .trend{
-    .trend-block{
+    &-block{
+        h2{
+            font-family: 'OnestBold';
+            font-size: 46px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 130%;
+            align-self: center;
+            span{
+                color: $main;
+            }
+        }
+    }
+    &-block-cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 464px;
-        picture{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            img{
-                position: absolute;
-                object-fit: cover;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
+        gap: 20px;
+        padding-top: 50px;
+        .trend-block-card{
+            gap: 20px;
+            picture{
+                height: 366px;
+                width: 100%;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 22px;
+                }
+            }
+            .trend-block-text{
+                gap: 10px;
+                h3{
+                    font-family: 'Onest';
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: #000000;
+                    line-height: 100%;
+                }  
+                p{
+                    font-family: 'OnestRegular';
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #111111BD;
+                    line-height: 134%;
+                }  
+            }
+        }
+        .trend-block-card:hover{
+            .trend-block-text{
+                h3{
+                    color: $main;
+                }  
+                p{
+                    color: #111111BD;
+                }  
+            }
+        }
+    }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+    .trend{
+        h2{
+            font-family: 'OnestBold';
+            font-size: 36px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 130%;
+            span{
+                color: $main;
+            }
+        }
+        .trend-block{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 375px;
+            gap: 20px;
+            padding-top: 50px;
+            .trend-block-card{
+                gap: 20px;
+                picture{
+                    height: 286px;
+                }
+                .trend-block-text{
+                    gap: 10px;
+                    h3{
+                        font-family: 'OnestMedium';
+                        font-size: 32px;
+                        font-weight: 500;
+                        color: #000000;
+                        line-height: 120%;
+                    }  
+                    p{
+                        font-family: 'OnestRegular';
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #111111BD;
+                        line-height: 134%;
+                    }  
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+    .trend{
+        h2{
+            font-family: 'OnestBold';
+            font-size: 36px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 130%;
+            span{
+                color: $main;
+            }
+        }
+        .trend-block{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 337px);
+            gap: 30px;
+            padding-top: 40px;
+            .trend-block-card{
+                gap: 20px;
+                picture{
+                    height: 248px;
+                }
+                .trend-block-text{
+                    gap: 10px;
+                    h3{
+                        font-family: 'OnestMedium';
+                        font-size: 32px;
+                        font-weight: 500;
+                        color: #000000;
+                        line-height: 120%;
+                    }  
+                    p{
+                        font-family: 'OnestRegular';
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #111111BD;
+                        line-height: 134%;
+                    }  
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .trend{
+        h2{
+            font-family: 'OnestBold';
+            font-size: 24px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 130%;
+            span{
+                color: $main;
+            }
+        }
+        .trend-block{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 256px);
+            gap: 30px;
+            padding-top: 25px;
+            .trend-block-card{
+                gap: 20px;
+                picture{
+                    height: 184px;
+                }
+                .trend-block-text{
+                    gap: 10px;
+                    h3{
+                        font-family: 'OnestBold';
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #000000;
+                        line-height: 130%;
+                    }  
+                    p{
+                        font-family: 'OnestRegular';
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #111111BD;
+                        line-height: 130%;
+                    }  
+                }
             }
         }
     }

@@ -1,0 +1,26 @@
+.company{
+    &-block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &-text{
+            gap: 30px;
+            h2{
+                font-family: 'OnestBold';
+                font-size: 46px;
+                font-weight: 700;
+                color: $black;
+                line-height: 130%;
+                span{
+                    color: $main;
+                }
+            }
+            p{
+                font-family: 'OnestRegular';
+                font-size: 18px;
+                font-weight: 400;
+                color: #111111BD;
+                line-height: 130%;
+            }
+        }
+    }
+}

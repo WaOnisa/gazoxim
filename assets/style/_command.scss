@@ -1,0 +1,43 @@
+.command{
+    &-block{
+        gap: 55px;
+        h2{ 
+            max-width: 1159px;
+            font-family: 'OnestBold';
+            font-size: 50px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 130%;
+            text-align: right;
+            span{
+                color: $main;
+            }
+            p{
+                color: $black;
+            }
+        }
+        &-cards{
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            row-gap: 40px;
+            column-gap: 100px;
+        }
+        &-card{
+            gap: 5px;
+            p{
+                font-family: 'OnestRegular';
+                font-size: 20px;
+                font-weight: 400;
+                color: #817E7E;
+                line-height: 134%;
+            }
+            span{
+                font-family: 'Onest';
+                font-size: 64px;
+                font-weight: 500;
+                color: $main;
+                line-height: 130%;
+            }
+        }
+    }
+}

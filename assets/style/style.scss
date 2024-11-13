@@ -2,5 +2,37 @@
     margin: 0;
     padding: 0;
 }
+
 @import 'colors','fonts';
-@import 'header','main-banner','tgwidget','trend';
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, .a, .span, h1, h2, h3, h4, h5, h6, p, a, span {
+    margin: 0;
+}
+
+.centred{
+    &-trend,
+    &-company,
+    &-command,
+    &-project,
+    &-know-more,
+    &-partners,
+    &-contacts
+    {
+        padding: 75px 0;
+    }
+}
+
+.button-main{
+    background-color: $main;
+    padding: 15.5px 34px;
+    font-family: 'Onest';
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+    line-height: 127.5%;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px $main solid;
+}
+
+@import 'header','main-banner','tgwidget','trend', 'company', 'command', 'project', 'know-more', 'partners', 'contacts', 'footer';
