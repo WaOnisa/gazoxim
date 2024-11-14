@@ -24,7 +24,7 @@
 
 .button-main{
     background-color: $main;
-    padding: 15.5px 34px;
+    padding: 16px 34px;
     font-family: 'Onest';
     font-size: 18px;
     font-weight: 700;
@@ -33,6 +33,31 @@
     text-decoration: none;
     border-radius: 10px;
     border: 1px $main solid;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+.button-white{
+    background-color: $white;
+    color: $main;
+    border: 1px $white solid;
+}
+.button-img{
+    padding: 15.5px 34px;
+}
+@media (max-width: 576px) {
+    .button-main{
+        padding: 12px 24px;
+        font-family: 'Onest';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 127.5%;
+    }
+    .button-img{
+        padding: 10px 24px;
+    }
 }
 
 @import 'header','main-banner','tgwidget','trend', 'company', 'command', 'project', 'know-more', 'partners', 'contacts', 'footer';

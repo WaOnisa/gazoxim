@@ -29,7 +29,7 @@
 
 .button-main {
   background-color: #3B79FF;
-  padding: 15.5px 34px;
+  padding: 16px 34px;
   font-family: "Onest";
   font-size: 18px;
   font-weight: 700;
@@ -38,8 +38,35 @@
   text-decoration: none;
   border-radius: 10px;
   border: 1px #3B79FF solid;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
 }
 
+.button-white {
+  background-color: #FFFFFF;
+  color: #3B79FF;
+  border: 1px #FFFFFF solid;
+}
+
+.button-img {
+  padding: 15.5px 34px;
+}
+
+@media (max-width: 576px) {
+  .button-main {
+    padding: 12px 24px;
+    font-family: "Onest";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 127.5%;
+  }
+  .button-img {
+    padding: 10px 24px;
+  }
+}
 header {
   padding-top: 18px;
   padding-bottom: 20px;
@@ -588,4 +615,222 @@ header .offcanvas.offcanvas-end .offcanvas-body nav .off-contacts div p {
   font-weight: 500;
   color: #3B79FF;
   line-height: 130%;
+}
+
+.know-more-all {
+  position: relative;
+  padding: 120px 66px;
+}
+.know-more-all picture {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.know-more-all picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+}
+.know-more-all-block {
+  gap: 44px;
+  max-width: 500px;
+}
+.know-more-all-block-text {
+  gap: 14px;
+}
+.know-more-all-block-text h2 {
+  font-family: "OnestBold";
+  font-size: 46px;
+  font-weight: 700;
+  color: #3B79FF;
+  line-height: 130%;
+}
+.know-more-all-block-text p {
+  font-family: "OnestRegular";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 0.7411764706);
+  line-height: 134%;
+}
+.know-more-all-block-btns {
+  gap: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.know-more-all-block-btns .white {
+  gap: 14px;
+  padding: 15px 78.5px;
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .know-more-all {
+    padding: 64px 40px;
+  }
+  .know-more-all-block {
+    gap: 30px;
+    max-width: 430px;
+  }
+  .know-more-all-block-text {
+    gap: 14px;
+  }
+  .know-more-all-block-text h2 {
+    font-family: "OnestBold";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .know-more-all-block-text p {
+    font-family: "Onest";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .know-more-all-block-btns {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 279px;
+    gap: 18px;
+  }
+  .know-more-all-block-btns .button-white {
+    gap: 14px;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 992px) and (min-width: 576px) {
+  .know-more-all {
+    padding: 44px 34px 220px 34px;
+  }
+  .know-more-all-block {
+    gap: 30px;
+    max-width: 430px;
+  }
+  .know-more-all-block-text {
+    gap: 14px;
+  }
+  .know-more-all-block-text h2 {
+    font-family: "OnestBold";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .know-more-all-block-text p {
+    font-family: "Onest";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .know-more-all-block-btns {
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 450px;
+    gap: 18px;
+  }
+  .know-more-all-block-btns .button-white {
+    gap: 14px;
+    padding: 15px 16px;
+  }
+}
+@media (max-width: 576px) {
+  .know-more-all {
+    padding: 44px 20px 220px 20px;
+  }
+  .know-more-all-block {
+    gap: 30px;
+    max-width: 430px;
+  }
+  .know-more-all-block-text {
+    gap: 14px;
+  }
+  .know-more-all-block-text h2 {
+    font-family: "OnestBold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .know-more-all-block-text p {
+    font-family: "OnestRegular";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .know-more-all-block-btns {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 450px;
+    gap: 18px;
+  }
+  .know-more-all-block-btns .button-white {
+    gap: 14px;
+    padding: 10.5px 16px;
+  }
+}
+footer .footer {
+  padding: 40px 0;
+  background-color: #F7F7F7;
+}
+footer .footer-all {
+  gap: 120px;
+}
+footer .footer-all-top {
+  gap: 10px;
+}
+footer .footer-all-top-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 46px;
+}
+footer .footer-all-top-nav div {
+  gap: 16px;
+}
+footer .footer-all-top-nav h3 {
+  font-family: "Onest";
+  font-size: 18px;
+  font-weight: 500;
+  color: #817E7E;
+  line-height: 127.5%;
+}
+footer .footer-all-top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+footer .footer-all-top-nav ul li {
+  font-family: "Onest";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 127.5%;
+}
+footer .footer-all-top-nav-number a {
+  font-family: "Onest";
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 127.5%;
+}
+footer .footer-all-top-nav-contacts a {
+  font-family: "Onest";
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 135%;
+}
+footer .footer-all-bottom p, footer .footer-all-bottom a {
+  font-family: "Onest";
+  font-size: 18px;
+  font-weight: 400;
+  color: #817E7E;
+  line-height: 127.5%;
+}
+footer .footer-all-bottom p span, footer .footer-all-bottom a span {
+  color: #000000;
+}
+footer .footer-all-bottom-ambity {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

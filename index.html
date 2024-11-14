@@ -205,21 +205,40 @@
         </section>
         <section class="centred-know-more">
             <div class="container">
-                <div>
-                    <div>
-                        <h2>Узнайте о нас больше</h2>
-                        <p>Приготовили полезные документы и презентации для быстрого скачивания с условиями сотрудничества, а также узнайте больше о нашей работе в социальных сетях</p>
-                    </div>
-                    <div>
-                        <button>Скачать КП</button>
-                        <button>Telegram</button>
+                <div class="know-more-all">
+                    <picture>
+                        <source srcset="/assets/img/know-more/know-more-320.svg" media="(max-width: 576px)">
+                        <source srcset="/assets/img/know-more/know-more-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                        <source srcset="/assets/img/know-more/know-more-1000.svg" media="(max-width: 1400px) and (min-width: 992px)">
+                        <source srcset="/assets/img/know-more/know-more-1400.svg" media="(min-width: 1400px)">
+                        <img src="/assets/img/know-more/know-more-1400.svg">
+                    </picture>
+                    <div class="know-more-all-block d-flex flex-column">
+                        <div class="know-more-all-block-text d-flex flex-column">
+                            <h2>Узнайте о нас больше</h2>
+                            <p>Приготовили полезные документы и презентации для быстрого скачивания с условиями сотрудничества, а также узнайте больше о нашей работе в социальных сетях</p>
+                        </div>
+                        <div class="know-more-all-block-btns">
+                            <button class="button-main button-img">Скачать КП <img src="/assets/img/imgVar/download.svg"></button>
+                            <button class="button-main button-white"><img src="/assets/img/imgVar/tg.svg">Telegram</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="centred-partners">
             <div class="container">
-                <h2>Клиенты и партнеры</h2>
+                <div>
+                    <h2>Клиенты и партнеры</h2>
+                    <div>
+                        <img src="/assets/img/partners/logolukoil.svg">
+                        <img src="/assets/img/partners/logotitan.svg">
+                        <img src="/assets/img/partners/logorosneft.svg">
+                        <img src="/assets/img/partners/logolukoil.svg">
+                        <img src="/assets/img/partners/logotitan.svg">
+                        <img src="/assets/img/partners/logorosneft.svg">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="centred-contacts">
@@ -254,46 +273,48 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div>
-                <div>
-                    <div>
-                        <img>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-all d-flex flex-column">
+                    <div class="footer-all-top d-flex flex-row justify-content-between">
+                        <div>
+                            <img src="/assets/img/footer/logofoot.svg">
+                        </div>
+                        <div class="footer-all-top-nav d-flex flex-row">
+                            <div class="d-flex flex-column">
+                                <h3><a>Наши направления</a></h3>
+                                <ul class="d-flex flex-column">
+                                    <li><a>Инжиниринг</a></li>
+                                    <li><a>Технологии</a></li>
+                                    <li><a>Исследования</a></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h3><a>Компания</a></h3>
+                                <ul class="d-flex flex-column">
+                                    <li><a>О компании</a></li>
+                                    <li><a>Проекты</a></li>
+                                    <li><a>Презентации и документы</a></li>
+                                    <li><a>Новости</a></li>
+                                    <li><a>Карьера</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-all-top-nav-number d-flex flex-column">
+                                <h3>Тел.:</h3>
+                                <a href="tel:+7 (347) 294-02-46">+7 (347) 294-02-46</a>
+                            </div>
+                            <div class="footer-all-top-nav-contacts d-flex flex-column">
+                                <h3>Напишите нам:</h3>
+                                <a href="mailto:mail@gashemeng.ru">mail@gashemeng.ru</a>
+                                <a href="#">TG: @gaschemeng.ru</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <h3>Наши направления</h3>
-                            <ul>
-                                <li>Инжиниринг</li>
-                                <li>Технологии</li>
-                                <li>Исследования</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Компания</h3>
-                            <ul>
-                                <li>О компании</li>
-                                <li>Проекты</li>
-                                <li>Презентации и документы</li>
-                                <li>Новости</li>
-                                <li>Карьера</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Тел.:</h3>
-                            <p>+7 (347) 294-02-46</p>
-                        </div>
-                        <div>
-                            <h3>Напишите нам:</h3>
-                            <a>mail@gashemeng.ru</a>
-                            <a>TG: @gaschemeng.ru</a>
-                        </div>
+                    <div class="footer-all-bottom d-flex flex-row justify-content-between">
+                        <p>2017-2024 - 000 “Газохим Инжиниринг</p>
+                        <a href="#">Политика конфиденциальности</a>
+                        <a class="footer-all-bottom-ambity" href="https://ambity.ru/">Разработка сайта<span> - Амбити</span></a>
                     </div>
-                </div>
-                <div>
-                    <p>2017-2024 - 000 “Газохим Инжиниринг</p>
-                    <a>Политика конфиденциальности</a>
-                    <a>Разработка сайта<span> - Амбити</span></a>
                 </div>
             </div>
         </div>
