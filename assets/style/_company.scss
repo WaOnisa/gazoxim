@@ -2,8 +2,10 @@
     &-block{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 165px 0;
+        gap: 25px;
         &-text{
-            gap: 30px;
+            gap: 24px;
             h2{
                 font-family: 'OnestBold';
                 font-size: 46px;
@@ -20,6 +22,103 @@
                 font-weight: 400;
                 color: #111111BD;
                 line-height: 130%;
+            }
+        }
+    }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+    .company{
+        &-block{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 0;
+            gap: 23px;
+            &-text{
+                gap: 30px;
+                h2{
+                    font-family: 'OnestBold';
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: $black;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                p{
+                    font-family: 'Onest';
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #111111BD;
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    .company{
+        &-block{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 482px;
+            padding: 0 0;
+            gap: 28px;
+            &-text{
+                order: -1;
+                gap: 30px;
+                h2{
+                    font-family: 'OnestBold';
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: $black;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                p{
+                    width: 432px;
+                    font-family: 'Onest';
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #111111BD;
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .company{
+        &-block{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 276px;
+            padding: 0 0;
+            gap: 28px;
+            &-text{
+                order: -1;
+                gap: 30px;
+                h2{
+                    font-family: 'OnestBold';
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $black;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                p{
+                    font-family: 'OnestRegular';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #111111BD;
+                    line-height: 130%;
+                }
             }
         }
     }

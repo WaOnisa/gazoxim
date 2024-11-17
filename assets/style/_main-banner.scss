@@ -3,6 +3,7 @@
         width: 787px;
         padding-top: 150px;
         padding-bottom: 130px;
+        gap: 20px;
         h1{
             font-family: 'Onest';
             font-size: 50px;
@@ -20,6 +21,95 @@
                 font-weight: 400;
                 color: $black;
                 line-height: 134%;
+            }
+        }
+    }
+}
+@media (max-width: 1400px) and (min-width: 992px) {
+    .main-banner{
+        .title-banner{
+            width: 614px;
+            padding-top: 121px;
+            padding-bottom: 121px;
+            gap: 20px;
+            h1{
+                font-family: 'Onest';
+                font-size: 40px;
+                font-weight: 700;
+                color: $main;
+                line-height: 130%;
+            }
+            div{
+                display: flex;
+                justify-content: end;
+                p{
+                    max-width: 359px;
+                    font-family: 'Onest';
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $black;
+                    line-height: 134%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    .main-banner{
+        .title-banner{
+            width: 436px;
+            padding-top: 98px;
+            padding-bottom: 98px;
+            gap: 20px;
+            h1{
+                font-family: 'OnestBold';
+                font-size: 36px;
+                font-weight: 700;
+                color: $main;
+                line-height: 130%;
+            }
+            div{
+                display: flex;
+                justify-content: end;
+                p{
+                    max-width: 257px;
+                    font-family: 'OnestRegular';
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $black;
+                    line-height: 134%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .main-banner{
+        .title-banner{
+            width: 298px;
+            padding-top: 61px;
+            padding-bottom: 136px;
+            gap: 20px;
+            h1{
+                font-family: 'OnestBold';
+                font-size: 24px;
+                font-weight: 700;
+                color: $main;
+                line-height: 130%;
+            }
+            div{
+                display: flex;
+                justify-content: start;
+                p{
+                    max-width: 186px;
+                    font-family: 'OnestRegular';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $black;
+                    line-height: 130%;
+                }
             }
         }
     }

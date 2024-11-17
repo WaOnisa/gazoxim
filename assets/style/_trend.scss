@@ -62,17 +62,20 @@
 }
 @media (max-width: 1400px) and (min-width: 992px) {
     .trend{
-        h2{
-            font-family: 'OnestBold';
-            font-size: 36px;
-            font-weight: 700;
-            color: #171717;
-            line-height: 130%;
-            span{
-                color: $main;
+        &-block{
+            h2{
+                font-family: 'OnestBold';
+                font-size: 36px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                align-self: center;
+                span{
+                    color: $main;
+                }
             }
         }
-        .trend-block{
+        &-block-cards{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 375px;
@@ -82,6 +85,13 @@
                 gap: 20px;
                 picture{
                     height: 286px;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 22px;
+                    }
                 }
                 .trend-block-text{
                     gap: 10px;
@@ -106,17 +116,19 @@
 }
 @media (max-width: 992px) and (min-width: 576px) {
     .trend{
-        h2{
-            font-family: 'OnestBold';
-            font-size: 36px;
-            font-weight: 700;
-            color: #171717;
-            line-height: 130%;
-            span{
-                color: $main;
+        &-block{
+            h2{
+                font-family: 'OnestBold';
+                font-size: 36px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                span{
+                    color: $main;
+                }
             }
         }
-        .trend-block{
+        &-block-cards{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 337px);
@@ -126,6 +138,13 @@
                 gap: 20px;
                 picture{
                     height: 248px;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 22px;
+                    }
                 }
                 .trend-block-text{
                     gap: 10px;
@@ -150,17 +169,19 @@
 }
 @media (max-width: 576px) {
     .trend{
-        h2{
-            font-family: 'OnestBold';
-            font-size: 24px;
-            font-weight: 700;
-            color: #171717;
-            line-height: 130%;
-            span{
-                color: $main;
+        &-block{
+            h2{
+                font-family: 'OnestBold';
+                font-size: 24px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                span{
+                    color: $main;
+                }
             }
         }
-        .trend-block{
+        &-block-cards{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 256px);
@@ -170,9 +191,16 @@
                 gap: 20px;
                 picture{
                     height: 184px;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 22px;
+                    }
                 }
                 .trend-block-text{
-                    gap: 10px;
+                    gap: 8px;
                     h3{
                         font-family: 'OnestBold';
                         font-size: 20px;

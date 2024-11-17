@@ -41,3 +41,139 @@
         }
     }
 }
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .command{
+        &-block{
+            gap: 50px;
+            h2{ 
+                max-width: 1159px;
+                font-family: 'Onest';
+                font-size: 40px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                text-align: right;
+                span{
+                    color: $main;
+                }
+                p{
+                    color: $black;
+                }
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                row-gap: 30px;
+                column-gap: 92px;
+            }
+            &-card{
+                gap: 5px;
+                p{
+                    font-family: 'Onest';
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                    line-height: 130%;
+                }
+                span{
+                    font-family: 'Onest';
+                    font-size: 64px;
+                    font-weight: 500;
+                    color: $main;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    .command{
+        &-block{
+            gap: 40px;
+            h2{ 
+                font-family: 'Onest';
+                font-size: 36px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                text-align: right;
+                span{
+                    color: $main;
+                }
+                p{
+                    color: $black;
+                }
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                row-gap: 20px;
+                column-gap: 30px;
+            }
+            &-card{
+                gap: 5px;
+                p{
+                    font-family: 'Onest';
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                    line-height: 130%;
+                }
+                span{
+                    font-family: 'Onest';
+                    font-size: 44px;
+                    font-weight: 500;
+                    color: $main;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .command{
+        &-block{
+            gap: 25px;
+            h2{ 
+                font-family: 'Onest';
+                font-size: 22px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                text-align: right;
+                span{
+                    color: $main;
+                }
+                p{
+                    color: $black;
+                }
+            }
+            &-cards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 25px;
+                column-gap: 20px;
+            }
+            &-card{
+                gap: 4px;
+                p{
+                    font-family: 'OnestRegular';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $darkGrey;
+                    line-height: 130%;
+                }
+                span{
+                    font-family: 'Onest';
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: $main;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+}

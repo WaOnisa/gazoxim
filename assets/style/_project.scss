@@ -1,0 +1,287 @@
+.project{
+    &-block{
+        gap: 50px;
+        &-title{
+            h2{ 
+                font-family: 'OnestBold';
+                font-size: 46px;
+                font-weight: 700;
+                color: #171717;
+                line-height: 130%;
+                span{
+                    color: $main;
+                }
+            }
+            &-btns{
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                justify-content: space-between;
+                .swiper-button-prev-project, .swiper-button-next-project{
+                    position: relative;
+                    z-index: 0;
+                    margin: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &-slider{
+            .swiper-slide{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    picture{
+                            width: 425px;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 14px;
+                            }
+                        }
+                    div{
+                        gap: 14px;
+                        h3{ 
+                            font-family: 'Onest';
+                            font-size: 22px;
+                            font-weight: 700;
+                            color: #000000;
+                            line-height: 127.5%;
+                        }
+                        p{ 
+                            font-family: 'OnestRegular';
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #111111BD;
+                            line-height: 134%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .project{
+        &-block{
+            gap: 50px;
+            &-title{
+                h2{ 
+                    font-family: 'OnestBold';
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #171717;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                &-btns{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    justify-content: space-between;
+                    .swiper-button-prev-project, .swiper-button-next-project{
+                        position: relative;
+                        z-index: 0;
+                        margin: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &-slider{
+                .swiper-slide{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        picture{
+                            width: 306px;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        div{
+                            gap: 12px;
+                            h3{ 
+                                font-family: 'OnestBold';
+                                font-size: 20px;
+                                font-weight: 700;
+                                color: #000000;
+                                line-height: 130%;
+                            }
+                            p{ 
+                                font-family: 'OnestRegular';
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #111111BD;
+                                line-height: 130%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    .project{
+        &-block{
+            gap: 40px;
+            &-title{
+                h2{ 
+                    font-family: 'OnestBold';
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #171717;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                &-btns{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    justify-content: space-between;
+                    .swiper-button-prev-project, .swiper-button-next-project{
+                        position: relative;
+                        z-index: 0;
+                        margin: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &-slider{
+                .swiper-slide{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        picture{
+                            width: 260px;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        div{
+                            gap: 12px;
+                            h3{ 
+                                font-family: 'OnestBold';
+                                font-size: 18px;
+                                font-weight: 700;
+                                color: #000000;
+                                line-height: 127.5%;
+                            }
+                            p{ 
+                                font-family: 'OnestRegular';
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #111111BD;
+                                line-height: 130%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .project{
+        &-block{
+            gap: 25px;
+            &-title{
+                h2{ 
+                    font-family: 'OnestBold';
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #171717;
+                    line-height: 130%;
+                    span{
+                        color: $main;
+                    }
+                }
+                &-btns{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    justify-content: space-between;
+                    .swiper-button-prev-project, .swiper-button-next-project{
+                        position: relative;
+                        z-index: 0;
+                        margin: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            &-slider{
+                .swiper-slide{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        width: 300px;
+                        picture{
+                            width: 260px;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        div{
+                            gap: 12px;
+                            h3{ 
+                                font-family: 'OnestBold';
+                                font-size: 18px;
+                                font-weight: 700;
+                                color: #000000;
+                                line-height: 127.5%;
+                            }
+                            p{ 
+                                font-family: 'OnestRegular';
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #111111BD;
+                                line-height: 130%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

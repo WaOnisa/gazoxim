@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+a:hover{
+    color: $main;
+}
+
 .centred{
     &-trend,
     &-company,
@@ -19,6 +23,51 @@
     &-contacts
     {
         padding: 75px 0;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 992px) {
+    .centred{
+        &-trend,
+        &-company,
+        &-command,
+        &-project,
+        &-know-more,
+        &-partners,
+        &-contacts
+        {
+            padding: 75px 0;
+        }
+    }
+}
+
+@media (max-width: 992px) and (min-width: 576px) {
+    .centred{
+        &-trend,
+        &-company,
+        &-command,
+        &-project,
+        &-know-more,
+        &-partners,
+        &-contacts
+        {
+            padding: 50px 0;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .centred{
+        &-trend,
+        &-company,
+        &-command,
+        &-project,
+        &-know-more,
+        &-partners,
+        &-contacts
+        {
+            padding: 30px 0;
+        }
     }
 }
 
@@ -47,6 +96,28 @@
 .button-img{
     padding: 15.5px 34px;
 }
+
+.button-main:hover, .button-img:hover{
+    background-color: $darkMain;
+    border: 1px $darkMain solid;
+    img{
+        filter: grayscale(100) brightness(200);
+    }
+}
+
+.button-white:hover{
+    background-color: $main;
+    color: $white;
+    border: 1px $main solid;
+    img{
+        filter: grayscale(100) brightness(200);
+    }
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+                content: none;
+}
+
 @media (max-width: 576px) {
     .button-main{
         padding: 12px 24px;

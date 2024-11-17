@@ -166,7 +166,7 @@
                         
                     </div>
                     <div class="company-block-text d-flex flex-column align-items-start">
-                        <h2>Компания <span>«Газохим Инжиниринг»</span></h2>
+                        <h2>Компания <br> <span>«Газохим Инжиниринг»</span></h2>
                         <p>Сегодня мы специализируемся на инжиниринге полного цикла в химической, нефтегазохимической и энергетической сфере. Разрабатываем опережающие технологии основного органического и нефтехимического синтеза с использованием принципов «зеленой» химии, а также в области водородной энергетики и снижения углеродного следа (CCS/CCUS/DAC).</p>
                         <button class="button-main"> Подробнее <img src="/assets/img/imgVar/arrow-right-white.svg"> </button>
                     </div>
@@ -200,9 +200,113 @@
         </section>
         <section class="centred-project">
             <div class="container">
-
+                <div class="project-block d-flex flex-column">
+                    <div class="project-block-title d-flex flex-row justify-content-between align-items-center">
+                        <h2>Реализованные <span>проекты</span></h2>
+                        <div class="project-block-title-btns">
+                            <div class="swiper-button-prev swiper-button-prev-project"><img class="d-none d-sm-flex" src="/assets/img/imgVar/left-arrow-blue.svg"><img class="d-flex d-sm-none" src="/assets/img/imgVar/smlleft-arrow-blue.svg"></div>
+                            <div class="swiper-button-next swiper-button-next-project"><img class="d-none d-sm-flex" src="/assets/img/imgVar/right-arrow-blue.svg"><img class="d-flex d-sm-none" src="/assets/img/imgVar/smlright-arrow-blue.svg"></div>
+                        </div>
+                    </div>
+                    <div class="project-block-slider">
+                        <div class="swiper swiper-project">
+                            <div class="swiper-wrapper">   
+                                <div class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <img src="/assets/img/project/slide-lukoil.svg">
+                                        </picture>
+                                        <div class="d-flex flex-column">
+                                            <h3>“ЛУКОЙЛ-Нижегороднефтеоргсинтез”</h3>
+                                            <p>Разработка технических решений по переработке пропилена на установках производства бензина кислотным алкилированием</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <img src="/assets/img/project/slide-titan.svg">
+                                        </picture>
+                                        <div class="d-flex flex-column">
+                                            <h3>ГК “ТИТАН”</h3>
+                                            <p>Установка и получение винил-н-бутилового эфира (по безацетиленовой технологии); разработка расширенного базового проекта, разработка рабоче-конструкторской документации на около 100 позиций оборудования, отбор и технический аудит изготовителя оборудования</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <img src="/assets/img/project/slide-rosneft.svg">
+                                        </picture>
+                                        <div class="d-flex flex-column">
+                                            <h3>ООО “РН-ЦИР”</h3>
+                                            <p>Техническое перевооружение установки легкого гидрокрекинга Л-24/6 (поток 1) АО “КНПЗ” в условиях работы установки в режиме изодепарафинизации с использованием катализаторов изодепарафинизации и гидрофинишинга</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <img src="/assets/img/project/slide-intertrans.svg">
+                                        </picture>
+                                        <div class="d-flex flex-column">
+                                            <h3>ТОО “INTERTRANS C.А.”</h3>
+                                            <p>Технология алкилирования изобутана олефинами в среде ионной жидкости и сравнительный анализ с ЖК И ТК-алкилированием</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <img src="/assets/img/project/slide-titan.svg">
+                                        </picture>
+                                        <div class="d-flex flex-column">
+                                            <h3>ГК “ТИТАН”</h3>
+                                            <p>Конденсация спиртов С4 с ацетальдегидом; оксиэтилирования спиртов С4 в сверхкритических условиях; дезалкоксилиривание дибутилацеталя с получением непредельных эфиров</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+         <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const swiper1 = new Swiper('.swiper-project', {
+                    direction: 'horizontal',
+                    loop: true,
+                    spaceBetween: 20,
+
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                            centeredSlides: true,
+                        },
+
+                        576: {
+                            slidesPerView: 2,
+                            centeredSlides: false,
+                        },
+
+                        992: {
+                            slidesPerView: 3,
+                            centeredSlides: true,
+                        },
+                        1400: {
+                            slidesPerView: 3,
+                            centeredSlides: true,
+                        },
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next-project',
+                        prevEl: '.swiper-button-prev-project',
+                    },
+                })
+            })
+        </script>
         <section class="centred-know-more">
             <div class="container">
                 <div class="know-more-all">
@@ -228,45 +332,42 @@
         </section>
         <section class="centred-partners">
             <div class="container">
-                <div>
-                    <h2>Клиенты и партнеры</h2>
-                    <div>
-                        <img src="/assets/img/partners/logolukoil.svg">
-                        <img src="/assets/img/partners/logotitan.svg">
-                        <img src="/assets/img/partners/logorosneft.svg">
-                        <img src="/assets/img/partners/logolukoil.svg">
-                        <img src="/assets/img/partners/logotitan.svg">
-                        <img src="/assets/img/partners/logorosneft.svg">
-                    </div>
+                <h2 class="partners-text">Клиенты и партнеры</h2>
+            </div>
+            <div class="partners-block">
+                <div class="partners-block-anim">
+                    <img src="/assets/img/partners/logolukoil.svg">
+                    <img src="/assets/img/partners/logotitan.svg">
+                    <img src="/assets/img/partners/logorosneft.svg">
                 </div>
             </div>
         </section>
         <section class="centred-contacts">
             <div class="container">
-                <div>
-                    <div>
+                <div class="contacts-block">
+                    <div class="contacts-block-text d-flex flex-column">
                         <h2>Свяжитесь с нами</h2>
-                        <div>
-                            <div>
-                                <img>
+                        <div class="contacts-block-text-pins d-flex flex-column">
+                            <div class="contacts-block-text-pin d-flex flex-row align-items-center">
+                                <img src="/assets/img/contacts/map-pin.svg">
                                 <p>г. Уфа, улица Авроры, д2 - головной офис</p>
                             </div>
-                            <div>
-                                <img>
+                            <div class="contacts-block-text-pin d-flex flex-row align-items-center">
+                                <img src="/assets/img/contacts/map-pin.svg">
                                 <p>г. Москва, улица, д</p>
                             </div>
-                            <div>
-                                <img>
+                            <div class="contacts-block-text-pin d-flex flex-row align-items-center">
+                                <img src="/assets/img/contacts/phone.svg">
                                 <p>+7 (347) 294-02-46</p>
                             </div>
-                            <div>
-                                <img>
+                            <div class="contacts-block-text-pin d-flex flex-row align-items-center">
+                                <img src="/assets/img/contacts/mail.svg">
                                 <p>mail@gashemeng.ru</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-
+                    <div class="contacts-map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac86465f998e97c5730b3de3f3ab3c3eeda990b973176c563bda8fd88fa0d63fb&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             </div>
@@ -276,41 +377,66 @@
         <div class="footer">
             <div class="container">
                 <div class="footer-all d-flex flex-column">
-                    <div class="footer-all-top d-flex flex-row justify-content-between">
+                    <div class="footer-all-top d-flex justify-content-between">
                         <div>
                             <img src="/assets/img/footer/logofoot.svg">
                         </div>
-                        <div class="footer-all-top-nav d-flex flex-row">
-                            <div class="d-flex flex-column">
+                        <div class="footer-all-top-nav">
+                            <div class="footer-all-top-nav-ul d-flex flex-column">
                                 <h3><a>Наши направления</a></h3>
                                 <ul class="d-flex flex-column">
-                                    <li><a>Инжиниринг</a></li>
-                                    <li><a>Технологии</a></li>
-                                    <li><a>Исследования</a></li>
+                                    <li><a href="#">Инжиниринг</a></li>
+                                    <li><a href="#">Технологии</a></li>
+                                    <li><a href="#">Исследования</a></li>
                                 </ul>
                             </div>
-                            <div class="d-flex flex-column">
+                            <div class="footer-all-top-nav-ul d-flex flex-column">
                                 <h3><a>Компания</a></h3>
                                 <ul class="d-flex flex-column">
-                                    <li><a>О компании</a></li>
-                                    <li><a>Проекты</a></li>
-                                    <li><a>Презентации и документы</a></li>
-                                    <li><a>Новости</a></li>
-                                    <li><a>Карьера</a></li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Проекты</a></li>
+                                    <li><a href="#">Презентации и документы</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Карьера</a></li>
                                 </ul>
                             </div>
-                            <div class="footer-all-top-nav-number d-flex flex-column">
+                            <div class="footer-all-top-nav-number d-flex d-sm-flex d-lg-none d-xxl-flex flex-column">
                                 <h3>Тел.:</h3>
                                 <a href="tel:+7 (347) 294-02-46">+7 (347) 294-02-46</a>
                             </div>
-                            <div class="footer-all-top-nav-contacts d-flex flex-column">
-                                <h3>Напишите нам:</h3>
-                                <a href="mailto:mail@gashemeng.ru">mail@gashemeng.ru</a>
-                                <a href="#">TG: @gaschemeng.ru</a>
+                            <div class="footer-all-top-nav-contacts d-flex d-sm-flex d-lg-none d-xxl-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <h3>Напишите нам:</h3>
+                                    <a href="mailto:mail@gashemeng.ru">mail@gashemeng.ru</a>
+                                    <a href="#">TG: @gaschemeng.ru</a>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h3>Свяжитесь с нами:</h3>
+                                    <a href="#">г. Уфа, ул. Авроры, д2</a>
+                                    <a href="#">г. Москва, ул. , д</a>
+                                </div>
+                            </div>
+                            <div class="footer-all-top-nav-inf d-none d-sm-none d-lg-flex d-xxl-none flex-column" style="gap: 32px;">
+                                <div class="footer-all-top-nav-number d-flex flex-column">
+                                    <h3>Тел.:</h3>
+                                    <a href="tel:+7 (347) 294-02-46">+7 (347) 294-02-46</a>
+                                </div>
+                                <div class="footer-all-top-nav-contacts d-flex flex-column" style="gap: 32px;">
+                                    <div class="d-flex flex-column">
+                                        <h3>Напишите нам:</h3>
+                                        <a href="mailto:mail@gashemeng.ru">mail@gashemeng.ru</a>
+                                        <a href="#">TG: @gaschemeng.ru</a>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3>Свяжитесь с нами:</h3>
+                                        <a href="#">г. Уфа, ул. Авроры, д2</a>
+                                        <a href="#">г. Москва, ул. , д</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-all-bottom d-flex flex-row justify-content-between">
+                    <div class="footer-all-bottom d-flex justify-content-between">
                         <p>2017-2024 - 000 “Газохим Инжиниринг</p>
                         <a href="#">Политика конфиденциальности</a>
                         <a class="footer-all-bottom-ambity" href="https://ambity.ru/">Разработка сайта<span> - Амбити</span></a>

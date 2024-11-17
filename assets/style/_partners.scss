@@ -1,0 +1,16 @@
+.partners{
+    &-text{
+        font-family: 'OnestBold';
+        font-size: 46px;
+        font-weight: 700;
+        color: $black;
+        line-height: 130%;
+    }
+    &-block{
+        &-anim{
+            img{
+                padding: 92px;
+            }
+        }
+    }
+}
