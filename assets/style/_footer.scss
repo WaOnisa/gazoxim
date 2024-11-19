@@ -11,7 +11,7 @@ footer{
             gap: 10px;
             &-nav{
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(2, auto); 
                 gap: 46px;
                 &-ul{
                     gap:16px
@@ -42,6 +42,16 @@ footer{
                         color: $main;
                     }
                 }
+                &-menu{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 46px;
+                }
+                &-inf{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 46px;
+                }
                 &-number{
                     gap: 16px;
                     a{
@@ -57,7 +67,9 @@ footer{
                     }
                 }
                 &-contacts{
-                    gap: 24px;
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    gap: 46px;
                     div{
                         gap: 16px;
                     }
@@ -108,7 +120,7 @@ footer{
                 gap: 10px;
                 &-nav{
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(2, auto);
                     gap: 36px;
                     &-ul{
                         gap:16px
@@ -139,6 +151,16 @@ footer{
                             color: $main;
                         }
                     }
+                    &-menu{
+                        display: grid;
+                        grid-template-columns: repeat(2, auto);
+                        gap: 36px;
+                    }
+                    &-inf{
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap: 32px;
+                    }
                     &-number{
                         gap: 16px;
                         a{
@@ -154,7 +176,9 @@ footer{
                         }
                     }
                     &-contacts{
-                        gap: 24px;
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap: 32px;
                         div{
                             gap: 16px;
                         }
@@ -206,9 +230,9 @@ footer{
                 gap: 56px;
                 &-nav{
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: auto;
                     justify-content: start;
-                    gap: 40px;
+                    gap: 36px;
                     &-ul{
                         gap:16px
                     }
@@ -238,6 +262,16 @@ footer{
                             color: $main;
                         }
                     }
+                    &-menu{
+                        display: grid;
+                        grid-template-columns: repeat(2, auto);
+                        gap: 40px;
+                    }
+                    &-inf{
+                        display: grid;
+                        grid-template-columns: repeat(2, auto);
+                        gap: 40px;
+                    }
                     &-number{
                         gap: 16px;
                         a{
@@ -253,7 +287,9 @@ footer{
                         }
                     }
                     &-contacts{
-                        gap: 24px;
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap: 32px;
                         div{
                             gap: 16px;
                         }
@@ -306,8 +342,8 @@ footer{
                 gap: 40px;
                 &-nav{
                     display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 20px;
+                    grid-template-columns: auto;
+                    gap: 35px;
                     &-ul{
                         gap:16px
                     }
@@ -337,6 +373,16 @@ footer{
                             color: $main;
                         }
                     }
+                    &-menu{
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap: 20px;
+                    }
+                    &-inf{
+                        display: grid;
+                        grid-template-columns:auto;
+                        gap: 20px;
+                    }
                     &-number{
                         gap: 16px;
                         a{
@@ -352,7 +398,9 @@ footer{
                         }
                     }
                     &-contacts{
-                        gap: 24px;
+                        display: grid;
+                        grid-template-columns:auto;
+                        gap: 32px;
                         div{
                             gap: 16px;
                         }
