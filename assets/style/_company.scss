@@ -1,9 +1,83 @@
 .company{
+    &-back *{
+        position: absolute;
+    }
+    &-back{
+        overflow: visible;
+        &-vecone{
+            z-index: -5;
+            left: 0;
+            top: -100px;
+        }
+    }
+    @media (max-width: 1400px) and (min-width: 992px) {
+        &-back{
+            overflow: visible;
+            &-vecone{
+                z-index: -5;
+                left: 0;
+                top: -200px;
+            }
+        }
+    }
+    @media (max-width: 992px) and (min-width: 576px) {
+        &-back{
+            overflow: visible;
+            &-vecone{
+                z-index: -5;
+                top: 300px;
+                left: 50%;
+                transform: translateX(-50%);
+                filter: blur(10px);
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        &-back{
+            overflow: visible;
+            &-vecone{
+                z-index: -5;
+                top: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                filter: blur(30px);
+            }
+        }
+    }
+
     &-block{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 165px 0;
         gap: 25px;
+        &-icons *{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-icons{
+            &-oval{
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &-icon{
+                z-index: 2;
+            }
+            &-textlogo{
+                animation: rotation-text 20s infinite linear;
+            }
+        }
+        @keyframes rotation-text{
+            0% {
+                transform:rotate(0deg);
+            }
+            100% {
+                transform:rotate(360deg);
+            }
+        }
         &-text{
             gap: 24px;
             h2{

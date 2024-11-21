@@ -1,4 +1,20 @@
 .contacts{
+    &-back *{
+        position: absolute;
+    }
+    &-back{
+        overflow: visible;
+        &-vecone{
+            z-index: -5;
+            left: 400px;
+            top: -150px;
+        }
+        &-vectwo{
+            z-index: -5;
+            left: 0;
+            top: 20px;
+        }
+    }
     &-block{
         display: grid;
         gap: 20px;

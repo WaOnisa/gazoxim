@@ -104,15 +104,24 @@
     </header>
     <a href="#" class="tgwidget">
         <div class="position-relative">
-            <img class="position-absolute icon" src="/assets/img/imgVar/tgvector.svg">
-            <img class="position-absolute back" src="/assets/img/imgVar/ellipse.svg">
-            <div class="position-absolute textblock"><img class="text" src="/assets/img/imgVar/text.svg"></div>
+            <img class="position-absolute d-none d-sm-block icon" src="/assets/img/imgVar/tgvector.svg">
+            <img class="position-absolute d-none d-sm-block back" src="/assets/img/imgVar/ellipse.svg">
+            <div class="position-absolute d-none d-sm-block textblock"><img class="text" src="/assets/img/imgVar/text.svg"></div>
+            <img class="position-absolute d-block d-sm-none icon" src="/assets/img/imgVar/smltgvector.svg">
+            <img class="position-absolute d-block d-sm-none back" src="/assets/img/imgVar/smlellipse.svg">
+            <div class="position-absolute d-block d-sm-none textblock"><img class="text" src="/assets/img/imgVar/smltext.svg"></div>
         </div>
     </a>
     <main>
         <section class="main-banner"> 
-            <div>
-                <img>
+            <div class="main-banner-back position-relative">
+                <img class="main-banner-back-vecone d-none d-xxl-block" src="/assets/img/main-banner/vector1.webp">
+                <img class="main-banner-back-vecone d-none d-lg-block d-xxl-none" src="/assets/img/main-banner/vector1-1000.webp">
+                <img class="main-banner-back-vecone d-none d-sm-block d-lg-none" src="/assets/img/main-banner/vector1-576.webp">
+                <img class="main-banner-back-vecone d-block d-sm-none" src="/assets/img/main-banner/vector1-320.webp">
+                <img class="main-banner-back-vectwo d-none d-lg-block" src="/assets/img/main-banner/vector2.webp">
+                <img class="main-banner-back-vectwo d-none d-sm-block d-lg-none" src="/assets/img/main-banner/vector2-576.webp">
+                <img class="main-banner-back-vectwo d-block d-sm-none" src="/assets/img/main-banner/vector2-320.webp">
             </div>
             <div class="container d-flex flex-row justify-content-center">
                 <div class="title-banner d-flex flex-column justify-content-center">
@@ -124,11 +133,17 @@
             </div>
         </section>
         <section class="centred-trend">
+            <div class="trend-back position-relative">
+                <img class="trend-back-vecone d-none d-xxl-block" src="/assets/img/trend/vector1.webp">
+                <img class="trend-back-vecone d-none d-lg-block d-xxl-none" src="/assets/img/trend/vector1-1000.webp">
+                <img class="trend-back-vecone d-none d-sm-block d-lg-none" src="/assets/img/trend/vector1-576.webp">
+                <img class="trend-back-vecone d-block d-sm-none" src="/assets/img/trend/vector1-320.webp">
+            </div>
             <div class="container">
                 <div class="trend-block  d-flex flex-column">
                     <h2>Специализируемся в следующих <span>направлениях</span></h2>
                     <div class="trend-block-cards">
-                        <div class="trend-block-card d-flex flex-column">
+                        <a class="trend-block-card d-flex flex-column">
                             <picture>
                                 <img src="/assets/img/trend/trend1.webp">
                             </picture>
@@ -136,8 +151,8 @@
                                 <h3>Инжиниринг</h3>
                                 <p>Комплексный инжиниринг</p>
                             </div>
-                        </div>
-                        <div class="trend-block-card d-flex flex-column">
+                        </a>
+                        <a class="trend-block-card d-flex flex-column">
                             <picture>
                                 <img src="/assets/img/trend/trend2.webp">
                             </picture>
@@ -145,8 +160,8 @@
                                 <h3>Исследования</h3>
                                 <p>Наноинженерия, нейротехнологии</p>
                             </div>
-                        </div>
-                        <div class="trend-block-card d-flex flex-column">
+                        </a>
+                        <a class="trend-block-card d-flex flex-column">
                             <picture>
                                 <img src="/assets/img/trend/trend3.webp">
                             </picture>
@@ -154,16 +169,42 @@
                                 <h3>Технологии</h3>
                                 <p>Водородные, цифровые</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="centred-company">
+            <div class="company-back position-relative">
+                <img class="company-back-vecone d-none d-xxl-block" src="/assets/img/company/vector1.webp">
+                <img class="company-back-vecone d-none d-lg-block d-xxl-none" src="/assets/img/company/vector1-1000.webp">
+                <img class="company-back-vecone d-none d-sm-block d-lg-none" src="/assets/img/company/vector1-576.webp">
+                <img class="company-back-vecone d-block d-sm-none" src="/assets/img/company/vector1-320.webp">
+            </div>
             <div class="container">
                 <div class="company-block">
-                    <div>
-                        
+                    <div class="company-block-icons position-relative">
+                        <picture class="company-block-icons-icon position-absolute">
+                            <source srcset="/assets/img/company/icon-320.svg" media="(max-width: 576px)">
+                            <source srcset="/assets/img/company/icon-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                            <source srcset="/assets/img/company/icon-1000.svg" media="(max-width: 1400px) and (min-width: 992px)">
+                            <source  srcset="/assets/img/company/icon-1400.svg" media="(min-width: 1400px)">
+                            <img src="/assets/img/company/icon-1400.svg">
+                        </picture>
+                        <picture class="company-block-icons-oval position-absolute">
+                            <source srcset="/assets/img/company/oval-320.svg" media="(max-width: 576px)">
+                            <source srcset="/assets/img/company/oval-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                            <source srcset="/assets/img/company/oval-1000.svg" media="(max-width: 1400px) and (min-width: 992px)">
+                            <source  srcset="/assets/img/company/oval-1400.svg" media="(min-width: 1400px)">
+                            <img src="/assets/img/company/oval-1400.svg">
+                        </picture>
+                        <picture class="company-block-icons-textlogo position-absolute">
+                            <source srcset="/assets/img/company/textlogo-320.svg" media="(max-width: 576px)">
+                            <source srcset="/assets/img/company/textlogo-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                            <source srcset="/assets/img/company/textlogo-1000.svg" media="(max-width: 1400px) and (min-width: 992px)">
+                            <source  srcset="/assets/img/company/textlogo-1400.svg" media="(min-width: 1400px)">
+                            <img src="/assets/img/company/textlogo-1400.svg">
+                        </picture>
                     </div>
                     <div class="company-block-text d-flex flex-column align-items-start">
                         <h2>Компания <br> <span>«Газохим Инжиниринг»</span></h2>
@@ -174,31 +215,67 @@
             </div>
         </section>
         <section class="centred-command">
+            <div class="command-back position-relative">
+                <img class="command-back-vecone d-none d-xxl-block" src="/assets/img/command/vector1.webp">
+                <img class="command-back-vectwo d-none d-xxl-block" src="/assets/img/command/vector2.webp">
+                <img class="command-back-vectwo d-none d-lg-block d-xxl-none" src="/assets/img/command/vector2-1000.webp">
+                <img class="command-back-vectwo d-none d-sm-block d-lg-none" src="/assets/img/command/vector2-576.webp">
+                <img class="command-back-vectwo d-block d-sm-none" src="/assets/img/command/vector2-320.webp">
+            </div>
             <div class="container">
                 <div class="command-block d-flex flex-column align-items-end">
                     <h2>Наша <span>команда -</span> <p>талантливые и увлеченные специалисты, умеющие быстро решать сложные задачи</p></h2>
-                    <div class="command-block-cards">
-                        <div class="command-block-card d-flex flex-column align-items-start">
-                            <p>Специалистов в штате</p>
-                            <span>30+</span>
+                    <div class="d-flex flex-row">
+                        <div class="command-block-gears">
+                            <picture class="command-block-gears-gearone">
+                                <source srcset="/assets/img/command/gear1-320.svg" media="(max-width: 576px)">
+                                <source srcset="/assets/img/command/gear1-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                                <source srcset="/assets/img/command/gear1-1400.svg" media="(min-width: 992px)">
+                                <img src="/assets/img/command/gear1-1400.svg">
+                            </picture>
+                            <picture class="command-block-gears-geartwo">
+                                <source srcset="/assets/img/command/gear2-320.svg" media="(max-width: 576px)">
+                                <source srcset="/assets/img/command/gear2-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                                <source srcset="/assets/img/command/gear2-1400.svg" media="(min-width: 992px)">
+                                <img src="/assets/img/command/gear2-1400.svg">
+                            </picture>
+                            <picture class="command-block-gears-gearthree">
+                                <source srcset="/assets/img/command/gear3-320.svg" media="(max-width: 576px)">
+                                <source srcset="/assets/img/command/gear3-576.svg" media="(max-width: 992px) and (min-width: 576px)">
+                                <source srcset="/assets/img/command/gear3-1400.svg" media="(min-width: 992px)">
+                                <img src="/assets/img/command/gear3-1400.svg">
+                            </picture>
                         </div>
-                        <div class="command-block-card d-flex flex-column align-items-start">
-                            <p>Работаем с месяца 2000 года</p>
-                            <span>10 лет</span>
-                        </div>
-                        <div class="command-block-card d-flex flex-column align-items-start">
-                            <p>Проектор выполнено</p>
-                            <span>30+</span>
-                        </div>
-                        <div class="command-block-card d-flex flex-column align-items-start">
-                            <p>Какая-то заслуга, признание</p>
-                            <span>№ место</span>
+                        <div class="command-block-cards">
+                            <div class="command-block-card d-flex flex-column align-items-start">
+                                <p>Специалистов в штате</p>
+                                <span>30+</span>
+                            </div>
+                            <div class="command-block-card d-flex flex-column align-items-start">
+                                <p>Работаем с месяца 2000 года</p>
+                                <span>10 лет</span>
+                            </div>
+                            <div class="command-block-card d-flex flex-column align-items-start">
+                                <p>Проектор выполнено</p>
+                                <span>30+</span>
+                            </div>
+                            <div class="command-block-card d-flex flex-column align-items-start">
+                                <p>Какая-то заслуга, признание</p>
+                                <span>№ место</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="centred-project">
+            <div class="project-back position-relative">
+                <img class="project-back-vecone d-none d-xxl-block" src="/assets/img/project/vector1.webp">
+                <img class="project-back-vectwo d-none d-xxl-block" src="/assets/img/project/vector2.webp">
+                <img class="project-back-vectwo d-none d-lg-block d-xxl-none" src="/assets/img/project/vector2-1000.webp">
+                <img class="project-back-vectwo d-none d-sm-block d-lg-none" src="/assets/img/project/vector2-576.webp">
+                <img class="project-back-vectwo d-block d-sm-none" src="/assets/img/project/vector2-320.webp">
+            </div>
             <div class="container">
                 <div class="project-block d-flex flex-column">
                     <div class="project-block-title d-flex flex-row justify-content-between align-items-center">
@@ -331,18 +408,30 @@
             </div>
         </section>
         <section class="centred-partners">
+            <div class="partners-back position-relative">
+                <img class="partners-back-vecone d-none d-xxl-block" src="/assets/img/partners/vector1.webp">
+                <img class="partners-back-vecone d-none d-lg-block d-xxl-none" src="/assets/img/partners/vector1-1000.webp">
+            </div>
             <div class="container">
                 <h2 class="partners-text">Клиенты и партнеры</h2>
             </div>
             <div class="partners-block">
                 <div class="partners-block-anim">
-                    <img src="/assets/img/partners/logolukoil.svg">
-                    <img src="/assets/img/partners/logotitan.svg">
-                    <img src="/assets/img/partners/logorosneft.svg">
+                    <img class="d-none" src="/assets/img/partners/logolukoil.svg">
+                    <img class="d-none" src="/assets/img/partners/logotitan.svg">
+                    <img class="d-none" src="/assets/img/partners/logorosneft.svg">
                 </div>
             </div>
         </section>
         <section class="centred-contacts">
+            <div class="contacts-back position-relative">
+                <img class="contacts-back-vecone d-none d-xxl-block" src="/assets/img/contacts/vector1.webp">
+                <img class="contacts-back-vecone d-none d-lg-block d-xxl-none" src="/assets/img/contacts/vector1-1000.webp">
+                <img class="contacts-back-vectwo d-none d-xxl-block" src="/assets/img/contacts/vector2.webp">
+                <img class="contacts-back-vectwo d-none d-lg-block d-xxl-none" src="/assets/img/contacts/vector2-1000.webp">
+                <img class="contacts-back-vectwo d-none d-sm-block d-lg-none" src="/assets/img/contacts/vector2-576.webp">
+                <img class="contacts-back-vectwo d-block d-sm-none" src="/assets/img/contacts/vector2-320.webp">
+            </div>
             <div class="container">
                 <div class="contacts-block">
                     <div class="contacts-block-text d-flex flex-column">

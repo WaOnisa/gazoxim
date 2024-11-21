@@ -1,10 +1,22 @@
 .partners{
+    &-back *{
+        position: absolute;
+    }
+    &-back{
+        overflow: visible;
+        &-vecone{
+            z-index: -5;
+            right: 0px;
+            top: -400px;
+        }
+    }
     &-text{
         font-family: 'OnestBold';
         font-size: 46px;
         font-weight: 700;
         color: $black;
         line-height: 130%;
+        text-align: center;
     }
     &-block{
         &-anim{

@@ -1,5 +1,122 @@
 .command{
+    &-back *{
+        position: absolute;
+    }
+    &-back{
+        overflow: visible;
+        &-vecone{
+            z-index: -5;
+            right: 0;
+            top: -350px;
+        }
+        &-vectwo{
+            z-index: -5;
+            left: 0;
+            top: -50px;
+        }
+    }
+    @media (max-width: 992px) {
+        &-back{
+            overflow: visible;
+            &-vectwo{
+                z-index: -5;
+                left: 0;
+                top: -150px;
+            }
+        }  
+    }
     &-block{
+        &-gears{
+            position: relative;
+            &-gearone{
+                z-index: -1;
+                position: absolute;
+                top: 50px;
+                left: -530px;
+                animation: rotation-gears 10s infinite linear;
+            }
+            &-geartwo{
+                z-index: -1;
+                position: absolute;
+                top: -10px;
+                left: -360px;
+                animation: rotation-gears-reverse 8s infinite linear;
+            }
+            &-gearthree{
+                z-index: -1;
+                position: absolute;
+                top: 180px;
+                left: -340px;
+                animation: rotation-gears-reverse 5s infinite linear;
+            }
+        }
+        @media (max-width: 1400px) and (min-width: 992px) {
+            &-gears{
+                position: relative;
+                &-gearone{
+                    top: 50px;
+                    left: -330px;
+                }
+                &-geartwo{
+                    top: -10px;
+                    left: -160px;
+                }
+                &-gearthree{
+                    top: 180px;
+                    left: -140px;
+                }
+            }
+        }
+        @media (max-width: 992px) and (min-width: 576px) {
+            &-gears{
+                position: relative;
+                &-gearone{
+                    top: -150px;
+                    left: -30px;
+                }
+                &-geartwo{
+                    top: -190px;
+                    left: 40px;
+                }
+                &-gearthree{
+                    top: -90px;
+                    left: 60px;
+                }
+            }
+        }
+        @media (max-width: 576px) {
+            &-gears{
+                position: relative;
+                &-gearone{
+                    top: -80px;
+                    left: 60px;
+                }
+                &-geartwo{
+                    top: -110px;
+                    left: 120px;
+                }
+                &-gearthree{
+                    top: -30px;
+                    left: 125px;
+                }
+            }
+        }
+        @keyframes rotation-gears{
+            0% {
+                transform:rotate(0deg);
+            }
+            100% {
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes rotation-gears-reverse{
+            0% {
+                transform:rotate(0deg);
+            }
+            100% {
+                transform:rotate(-360deg);
+            }
+        }
         gap: 55px;
         h2{ 
             max-width: 1159px;

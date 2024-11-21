@@ -30,18 +30,18 @@
         
     }
     .text {
-        animation-name: rotation;
+        animation-name: rotation-widget;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
 
-    @keyframes rotation {
+    @keyframes rotation-widget {
         0% {
             transform:rotate(0deg);
         }
         100% {
             transform:rotate(360deg);
         }
-}
+    }
 }

@@ -1,4 +1,20 @@
 .main-banner{
+    &-back *{
+        position: absolute;
+    }
+    &-back{
+        overflow: visible;
+        &-vecone{
+            z-index: -5;
+            right: 0;
+            top: -50px;
+        }
+        &-vectwo{
+            z-index: -5;
+            left: 0;
+            top: 20px;
+        }
+    }
     .title-banner{
         width: 787px;
         padding-top: 150px;
